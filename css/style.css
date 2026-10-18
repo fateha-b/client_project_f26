@@ -1,0 +1,436 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #00274C;
+    background-color: #F5F5F5;
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+strong {
+    font-weight: bold;
+}
+
+/* Header */
+header {
+    background-color: #00274C;
+    color: white;
+    padding: 1rem;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+    background-color: white;
+    margin-bottom: 1rem;
+}
+
+/* Navigation using Grid */
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+
+nav a {
+    display: block;
+    padding: 0.8rem;
+    background-color: white;
+    color: #00274C;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid white;
+}
+
+nav a:hover {
+    background-color: #FFCB05;
+    color: #00274C;
+}
+
+nav a[aria-current="page"] {
+    background-color: #FFCB05;
+    color: #00274C;
+    text-decoration: underline;
+}
+
+/* Skip to Main */
+header > a[href="#main"] {
+    position: absolute;
+    top: -100px;
+    left: 10px;
+    background-color: #FFCB05;
+    color: #00274C;
+    padding: 1rem;
+}
+
+header > a[href="#main"]:focus {
+    top: 10px;
+}
+
+/* Main content */
+main {
+    padding: 1rem;
+}
+
+section, aside {
+    background-color: white;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+main ul, main ol {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+main li {
+    margin-bottom: 0.5rem;
+}
+
+main ul {
+    list-style: disc;
+}
+
+main ol {
+    list-style: decimal;
+}
+
+main a {
+    color: #00274C;
+    font-weight: bold;
+}
+
+/* Images and videos */
+main img {
+    max-width: 100%;
+    height: auto;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+/* Footer */
+footer {
+    background-color: #00274C;
+    color: white;
+    padding: 1.5rem;
+}
+
+footer a {
+    color: white;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+/* Keyboard accessibility */
+a:focus {
+    outline: 3px solid #FFCB05;
+    outline-offset: 3px;
+}
+
+/* Homepage lifecycle cards */
+
+.stages ol {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    list-style: none;
+    padding-left: 0;
+}
+
+.stages ol > li {
+    background-color: #F5F7FA;
+    border-left: 5px solid #FFCB05;
+    padding: 1.25rem;
+    margin: 0;
+}
+
+.stages article h3 {
+    color: #00274C;
+}
+
+.stages article a {
+    display: inline-block;
+    background-color: #00274C;
+    color: white;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    margin-top: 0.5rem;
+}
+
+.stages article a:hover {
+    background-color: #FFCB05;
+    color: #00274C;
+    text-decoration: underline;
+}
+
+/* Homepage opportunity cards */
+
+.opportunities ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    list-style: none;
+    padding-left: 0;
+}
+
+.opportunities li {
+    background-color: #F5F7FA;
+    border: 1px solid #D6DEE8;
+    border-top: 4px solid #FFCB05;
+    padding: 1rem;
+    margin: 0;
+}
+
+.opportunities h3 {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+}
+
+.opportunities li a {
+    text-decoration: underline;
+}
+
+.opportunities li p {
+    margin-bottom: 0;
+}
+
+
+/* Preparing page - preparation process */
+
+.prep-process ol {
+    list-style: none;
+    padding-left: 0;
+}
+
+.prep-process li {
+    display: grid;
+    grid-template-columns: 3rem 1fr;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #D6DEE8;
+    padding-bottom: 1.5rem;
+}
+
+.step-number {
+    background-color: #FFCB05;
+    color: #00274C;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.5rem;
+    height: 3rem;
+    align-self: start;
+}
+
+.prep-process h3 {
+    margin-bottom: 0.5rem;
+}
+
+.prep-process li p {
+    margin-bottom: 0;
+}
+
+/* Featured resources */
+
+.resources h2 {
+    border-left: 5px solid #FFCB05;
+    padding-left: 1rem;
+}
+
+.resources ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.resources li {
+    border-bottom: 1px solid #D6DEE8;
+    padding: 1.25rem 0;
+    margin-bottom: 0;
+}
+
+.resources li:first-child {
+    border-top: 1px solid #D6DEE8;
+}
+
+.resources li a {
+    display: inline;
+    color: #00274C;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.resources li p {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+
+.resources li a:hover {
+    color: #000000;
+}
+
+
+/* Starting page - first partner meeting */
+
+.meeting-stage {
+    background-color: #F5F7FA;
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+    border-top: 4px solid #00274C;
+}
+
+.meeting-stage h3 {
+    color: #00274C;
+    border-bottom: 1px solid #D6DEE8;
+    padding-bottom: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.meeting-stage ul,
+.meeting-stage ol {
+    margin-bottom: 0;
+}
+
+.meeting-stage li {
+    padding-bottom: 0.5rem;
+}
+
+
+/* During page - project priorities */
+
+.project-work article {
+    padding: 1.25rem 0;
+    border-bottom: 1px solid #D6DEE8;
+}
+
+.project-work article:first-of-type {
+    border-top: 1px solid #D6DEE8;
+}
+
+.project-work article h3 {
+    color: #00274C;
+    border-left: 4px solid #FFCB05;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.project-work article p {
+    margin-bottom: 1rem;
+}
+
+.project-work article ul {
+    margin-bottom: 0;
+}
+
+/* During page - feedback process */
+
+.feedback ol {
+    list-style: none;
+    padding-left: 0;
+}
+
+.feedback li {
+    display: grid;
+    grid-template-columns: 3rem 1fr;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid #D6DEE8;
+    margin-bottom: 0;
+}
+
+.feedback-number {
+    box-sizing: border-box;
+    background-color: #00274C;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.5rem;
+    height: 3rem;
+    align-self: start;
+}
+
+.feedback li div {
+    padding-top: 0.25rem;
+}
+
+/* During page - mobile resource table */
+
+.table-container {
+    overflow-x: auto;
+    border: 1px solid #D6DEE8;
+    max-width: 100%;
+}
+
+.table-container table {
+    width: 100%;
+    min-width: 38rem;
+    border-collapse: collapse;
+}
+
+.table-container caption {
+    font-weight: bold;
+    text-align: left;
+    padding: 1rem;
+}
+
+.table-container th,
+.table-container td {
+    padding: 1rem;
+    text-align: left;
+    border: 1px solid #D6DEE8;
+    vertical-align: top;
+}
+
+.table-container thead {
+    background-color: #00274C;
+    color: white;
+}
+
+.table-container tbody th {
+    background-color: #F5F7FA;
+    font-weight: bold;
+}
+
+.table-container tr:nth-child(even) {
+    background-color: #F5F7FA;
+}
+
+.table-container:focus {
+    outline: 3px solid #FFCB05;
+}
+
+/* Table scrolling instructions */
+
+.scroll-hint {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #00274C;
+    margin-bottom: 0.75rem;
+}
